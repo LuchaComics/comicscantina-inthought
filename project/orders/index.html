@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Comics Cantina</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="Comics Cantina inc." content="">
+    <link rel="icon" href="../favicon.ico">
+    <!-- CSS Library -->
+    <link href="../../html/css/base.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Project specific css -->
+    <link href="../assets/css/custom.css" rel="stylesheet">
+</head>
+<body>
+<header class="navbar navbar-dark fixed-top bg-dark justify-content-between">
+    <a class="navbar-brand" href="#">Comics Cantina</a>
+    <button class="navbar-toggler" type="button" id="sidebarCollapse">
+        <i class="fa fa-bars"></i>
+    </button>
+</header>
+<div class="container-fluid">
+    <div class="d-flex align-items-stretch">
+        <nav id="sidebar">
+            <p class="text-center text-light mt-3 mb-2">Hi, Rodolfo</p>
+            <hr class="nav-divider">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../dashboard/"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../orders/">&nbsp;<i class="fas fa-dollar-sign"></i>&nbsp; Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../checkout/"><i class="fas fa-barcode"></i> Checkout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../comics/"><i class="fas fa-boxes"></i> Comics</a>
+                </li>
+            </ul>
+            <hr class="nav-divider">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../customers/"><i class="fas fa-user-circle"></i> Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../tasks/"><i class="fa fa-list-ol"></i> Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../staff/"><i class="fa fa-users"></i> Staff</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../settings"><i class="fas fa-cog"></i> Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../reports/"><i class="fa fa-chart-bar"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../help/"><i class="fas fa-question-circle"></i> Help</a>
+                </li>
+            </ul>
+            <hr class="nav-divider">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-sign-out-alt"></i> Logout</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="main" role="main">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../dashboard/">Dashboard</a></li>
+                    <li aria-current="page" class="breadcrumb-item active">Orders</li>
+                </ol>
+            </nav>
+            <h1>Orders</h1>
+            <section class="row text-center placeholders">
+                <div class="col-sm-4 placeholder">
+                    <div class="rounded-circle mx-auto mt-4 mb-4 circle-200 bg-pink">
+                        <a href="#" class="d-block link-ndecor" title="Add">
+                            <h1 class="r-circle"><i class="fas fa-plus fa-3x"></i></h1>
+                        </a>
+                    </div>
+                    <h4>Add</h4>
+                    <div class="text-muted">Add Orders</div>
+                </div>
+                <div class="col-sm-4 placeholder">
+                    <div class="rounded-circle mx-auto mt-4 mb-4 circle-200 bg-dgreen">
+                        <a href="#" class="d-block link-ndecor" title="Search">
+                            <h1 class="r-circle"><i class="fas fa-search fa-3x"></i></h1>
+                        </a>
+                    </div>
+                    <h4>Search</h4>
+                    <span class="text-muted">Search Orders</span>
+                </div>
+                <div class="col-sm-4 placeholder">
+                    <div class="rounded-circle mx-auto mt-4 mb-4 circle-200 bg-dblue">
+                        <a href="#" class="d-block link-ndecor" title="View">
+                            <h1 class="r-circle"><i class="fas fa-list-alt fa-3x"></i></h1>
+                        </a>
+                    </div>
+                    <h4>View</h4>
+                    <span class="text-muted">View Active Orders</span>
+                </div>
+            </section>
+
+            <h2>Recent Orders</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Order #</th>
+                        <th><i class="far fa-eye"></i></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Susan</td>
+                        <td>$ 99.9</td>
+                        <td>03/05/2019</td>
+                        <td>011</td>
+                        <td><a href="#">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>Susan</td>
+                        <td>$ 99.9</td>
+                        <td>03/05/2019</td>
+                        <td>012</td>
+                        <td><a href="#">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>Susan</td>
+                        <td>$ 99.9</td>
+                        <td>03/05/2019</td>
+                        <td>013</td>
+                        <td><a href="#">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>Susan</td>
+                        <td>$ 99.9</td>
+                        <td>03/05/2019</td>
+                        <td>014</td>
+                        <td><a href="#">View</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a id="return-to-top" href="#" class="btn-primary btn-lg back-to-top" role="button" title="Back to top"><i
+                    class="fas fa-angle-up fa-2x"></i></a>
+        </main>
+    </div>
+</div>
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
+<!-- Custom Scroller Js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../../html/js/base.js"></script>
+<script src="../../html/js/bootstrap-tagsinput.js"></script>
+<script src="../../html/js/typeahead.bundle.js"></script>
+<!-- Project specific js -->
+<script src="../assets/js/custom.js"></script>
+</body>
+</html>

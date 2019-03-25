@@ -1,0 +1,25 @@
+/*
+ * Project Specific css
+ */
+.text-orange, a {
+    color: #f26523;
+}
+a:hover {
+    color: #d54d0d;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #f26523;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: #f26523;
+}
+.form-control:focus {
+    border-color: #ff8f5a;
+    box-shadow: 0 0 0 0.2rem rgba(252,98,25,.25);
+}
+.custom-control-input:active~.custom-control-label::before {
+    background-color: rgba(252,98,25,.25);
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(252,98,25,.25);
+}
